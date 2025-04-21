@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_5"
+    tools:context=".SolvingGame">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <ImageButton
+        android:id="@+id/h_avatar_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Avatar Frame"
+        android:src="@drawable/sg_instruct"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_3"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <ImageButton
+        android:id="@+id/button_settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Settings Button"
+        android:src="@drawable/button_settings_2"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/h_learning_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Avatar Frame"
+        android:src="@drawable/sg_1_over_5"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_12"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_11"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        app:layout_constraintVertical_bias="0.50"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/sg_ver_star_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Avatar Frame"
+        android:src="@drawable/sg_ver_star_0"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_5"
+        app:layout_constraintVertical_bias="0.50"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <!-- Cloud + Addition Row -->
+    <LinearLayout
+        android:id="@+id/row_clouds"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_2"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_15"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_16">
+
+        <!-- Left Cloud -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/cloudImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sg_cloud_left"
+                android:contentDescription="Cloud Left" />
+
+            <TextView
+                android:id="@+id/randomNumberText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/chewy" />
+        </FrameLayout>
+
+        <!-- Operator Icon -->
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/operationIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sg_addition"
+                android:layout_gravity="bottom|center"
+                android:contentDescription="Addition" />
+        </FrameLayout>
+
+
+        <!-- Right Cloud -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/cloudImageRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sg_cloud_right"
+                android:contentDescription="Cloud Right" />
+
+            <TextView
+                android:id="@+id/randomNumberText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/chewy" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <!-- Tap Correct Answer Text -->
+    <ImageView
+        android:id="@+id/tap_correct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sg_tap_correct_answer_text"
+        android:contentDescription="Tap Correct"
+        app:layout_constraintTop_toBottomOf="@id/row_clouds"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_13"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_14"
+        android:layout_marginTop="6dp" />
+
+    <!-- Answer Frame with 5 Buttons Inside -->
+    <FrameLayout
+        android:id="@+id/answer_frame_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tap_correct"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_6"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_3"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_17">
+
+        <!-- Background Frame Image -->
+        <ImageView
+            android:id="@+id/answer_frame_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sg_answer_frame"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:contentDescription="Answer Frame" />
+
+        <!-- Centered Buttons -->
+        <LinearLayout
+            android:id="@+id/answer_buttons_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp">
+
+            <!-- 5 Answer Buttons -->
+            <!-- Answer Button 1 -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp">
+
+                <ImageButton
+                    android:id="@+id/answer_button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sg_answer_button"
+                    android:contentDescription="Answer 1" />
+
+                <TextView
+                    android:id="@+id/answer_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="#000000" />
+            </FrameLayout>
+
+            <!-- Answer Button 2 -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp">
+
+                <ImageButton
+                    android:id="@+id/answer_button_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sg_answer_button"
+                    android:contentDescription="Answer 2" />
+
+                <TextView
+                    android:id="@+id/answer_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="#000000" />
+            </FrameLayout>
+
+            <!-- Answer Button 3 -->
+            <FrameLayout
+                android:id="@+id/answer_container_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp">
+
+                <ImageButton
+                    android:id="@+id/answer_button_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sg_answer_button"
+                    android:contentDescription="Answer 3" />
+
+                <TextView
+                    android:id="@+id/answer_text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/chewy" />
+            </FrameLayout>
+
+            <!-- Answer Button 4 -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp">
+
+                <ImageButton
+                    android:id="@+id/answer_button_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sg_answer_button"
+                    android:contentDescription="Answer 4" />
+
+                <TextView
+                    android:id="@+id/answer_text_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="#000000" />
+            </FrameLayout>
+
+            <!-- Answer Button 5 -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp">
+
+                <ImageButton
+                    android:id="@+id/answer_button_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sg_answer_button"
+                    android:contentDescription="Answer 5" />
+
+                <TextView
+                    android:id="@+id/answer_text_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="#000000" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/resultPopup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/sg_correct"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Result Popup"/>
+
+    <FrameLayout
+        android:id="@+id/level_result_popup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_1"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_7"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_15"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_16">
+
+        <!-- Container -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/popup_container">
+
+            <!-- Banner (positioned partly outside container) -->
+            <ImageView
+                android:id="@+id/popup_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-70dp"
+                android:paddingStart="66dp"
+                android:paddingEnd="66dp"
+                android:src="@drawable/popup_complete_banner" />
+
+            <!-- Close Button -->
+            <ImageButton
+                android:id="@+id/button_close_popup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_close" />
+
+            <!-- Stars -->
+            <ImageView
+                android:id="@+id/popup_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_banner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-34dp"
+                android:paddingStart="110dp"
+                android:paddingEnd="110dp"
+                android:src="@drawable/star_3" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:id="@+id/popup_buttons_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_stars"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/popup_button_home"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/popup_home" />
+
+                <View
+                    android:layout_width="26dp"
+                    android:layout_height="0dp" />
+
+                <ImageButton
+                    android:id="@+id/popup_button_replay"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/popup_replay" />
+
+                <View
+                    android:layout_width="26dp"
+                    android:layout_height="0dp" />
+
+                <ImageButton
+                    android:id="@+id/popup_button_next"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/popup_replay_failed" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

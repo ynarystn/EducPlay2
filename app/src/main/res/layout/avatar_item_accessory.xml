@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemAccessory"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="6dp"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    android:background="@drawable/avatarpage_accessory_item_bg">
+
+    <!-- Accessory image -->
+    <ImageButton
+        android:id="@+id/accessoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/avatarpage_eyeglass"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:contentDescription="Accessory" />
+
+    <!-- Lock icon -->
+    <ImageButton
+        android:id="@+id/accessoryLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/button_lock"
+        android:layout_gravity="center"
+        android:contentDescription="Locked"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+</FrameLayout>
