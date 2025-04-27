@@ -100,23 +100,42 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.68" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
     <!-- Settings Icon -->
     <ImageButton
         android:id="@+id/button_settings"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="Settings Button"
-        android:src="@drawable/button_settings_2"
         android:background="@android:color/transparent"
+        android:contentDescription="Settings Button"
         android:scaleType="fitXY"
+        android:src="@drawable/button_settings_2"
         app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_1"
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
         app:layout_constraintStart_toEndOf="@id/guideline_vertical"
         app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
-        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck,TouchTargetSizeCheck" />
 
 
     <!-- Settings Text under the Icon -->
+    <ImageView
+        android:id="@+id/h_settings_text"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:contentDescription="Settings"
+        android:src="@drawable/h_settings_text"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_9"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_settings"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
 
     <!-- Start Cloud Centered -->
     <ImageView

@@ -169,6 +169,13 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.10" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
     <!-- Settings Icon -->
     <ImageButton
         android:id="@+id/button_settings"
@@ -184,6 +191,18 @@
         app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
         tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
 
+    <ImageView
+        android:id="@+id/h_settings_text"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:contentDescription="Settings"
+        android:src="@drawable/h_settings_text"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_9"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_settings"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
     <!-- Avatar Frame -->
     <ImageButton
         android:id="@+id/h_avatar_frame"
@@ -197,6 +216,18 @@
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical_3"
         app:layout_constraintStart_toEndOf="@id/guideline_vertical_2"
         app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/h_avatar_text"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:contentDescription="Avatar Frame"
+        android:src="@drawable/h_avatar_text"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_9"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_3"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_2"
+        app:layout_constraintTop_toBottomOf="@id/h_avatar_frame"
         tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
 
     <!-- Learning Text -->

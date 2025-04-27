@@ -122,6 +122,12 @@ class SolvingGame : FullscreenActivity() {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
         }
+
+        val sgInstructBtn: ImageButton = findViewById(R.id.sg_instruct)
+        sgInstructBtn.setSoundClickListener(this) {
+            val intent = Intent(this, Instruction::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun showPopup(isCorrect: Boolean) {

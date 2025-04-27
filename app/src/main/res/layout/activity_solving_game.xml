@@ -141,11 +141,18 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.82" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
     <ImageButton
-        android:id="@+id/h_avatar_frame"
+        android:id="@+id/sg_instruct"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="Avatar Frame"
+        android:contentDescription="Instruction"
         android:src="@drawable/sg_instruct"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
@@ -167,6 +174,18 @@
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
         app:layout_constraintStart_toEndOf="@id/guideline_vertical"
         app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/h_settings_text"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:contentDescription="Settings"
+        android:src="@drawable/h_settings_text"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_9"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_settings"
         tools:ignore="HardcodedText,ImageContrastCheck,RedundantDescriptionCheck" />
 
     <ImageView

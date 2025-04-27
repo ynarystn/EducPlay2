@@ -13,6 +13,10 @@
         android:theme="@style/Theme.EducPlay"
         tools:targetApi="31">
         <activity
+            android:name=".Instruction"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".AvatarPage"
             android:exported="false"
             android:screenOrientation="landscape" />
